@@ -4,6 +4,7 @@ $slicer = 1;
 $limit = 50;
 
 //ovoliko će se puta vrtit petlja
+ini_set('max_execution_time', 0);
 echo "lets go";
 for($i=0; $i<ceil(count($csv)/50); ++$i) {
 
