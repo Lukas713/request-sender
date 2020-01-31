@@ -4,7 +4,8 @@ $slicer = 1;
 $limit = 50;
 
 //ovoliko će se puta vrtit petlja
-for($i=0; $i<10; ++$i) {
+echo "lets go";
+for($i=0; $i<ceil(count($csv)/50); ++$i) {
 
     //uzmi 50 komada iz arraya
     $firstFifty = array_slice($csv, $slicer, $limit);
@@ -18,7 +19,7 @@ for($i=0; $i<10; ++$i) {
             'properties'    => [
                 'distinct_id'   => $firstFifty[$j][1],
                 'alias' => $firstFifty[$j][0],
-                'token' => '5f4a4a44c24b48aafd76bac351b3bf49'
+                'token' => '3aef4b835f5e70ae38c1dd64037633b9'
             ]
         ];
 
